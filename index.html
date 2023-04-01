@@ -21,6 +21,13 @@
         <div class="header-container">
           <nav class="header-navigation">
                 <a href="./index.html" class="header-logo logo"><span class="header-small-logo">Web</span>Studio</a>
+                <button type="button" class="menu-btn is-open"
+                aria-expanded="false">
+                  <svg width="32" height="22" aria-label="mobile menu switch">
+                  <use class="icon-close" href="./images/symbol-defs.svg#icon-close-modal"></use>
+                  <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                  </svg>
+                </button>
                 <ul class="header-list list">
                   <li class="header-item"><a href="./index.html" class="header-link link active">Studio</a></li>
                   <li class="header-item"><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
@@ -516,6 +523,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
 
