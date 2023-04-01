@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {   
+        .container{
+        width: 768px;
+        }
+
+    .feature-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 72px 24px;
+        }
+    .feature-item{
+        flex-basis: calc((100% - 48px) / 2);
+        }
+    .team-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 64px 24px;
+        }
+        .team-item {
+            flex-basis: calc((100% - 24px) / 2);
+            max-width: 264px;
+        }
+}
+@media screen and (max-width: 1199px){
+    .section {
+    padding: 96px 0;
+}
+    .feature-icon-item, .benefits{
+        display: none;
+    }
+}
