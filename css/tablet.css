@@ -8,7 +8,7 @@
 
     .feature-list{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
         justify-content: center;
         gap: 72px 24px;
         }

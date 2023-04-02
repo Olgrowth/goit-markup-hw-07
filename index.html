@@ -21,13 +21,20 @@
         <div class="header-container">
           <nav class="header-navigation">
                 <a href="./index.html" class="header-logo logo"><span class="header-small-logo">Web</span>Studio</a>
-                <button type="button" class="menu-btn is-open"
-                aria-expanded="false">
+                <button 
+                type="button" 
+                class="menu-toggle menu-btn is-open" 
+                js-open-menu
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                >
                   <svg width="32" height="22" aria-label="mobile menu switch">
-                  <use class="icon-close" href="./images/symbol-defs.svg#icon-close-modal"></use>
+                  
                   <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
                   </svg>
                 </button>
+
+              
                 <ul class="header-list list">
                   <li class="header-item"><a href="./index.html" class="header-link link active">Studio</a></li>
                   <li class="header-item"><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
@@ -42,6 +49,29 @@
           </address>
         </div>
       </div>
+      <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg>
+      <use class="icon-close" href="./images/symbol-defs.svg#icon-close-modal"></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu">
+                  <li class="header-item"><a href="./index.html" class="header-link link active">Studio</a></li>
+                  <li class="header-item"><a href="./portfolio.html" class="header-link link">Portfolio</a></li>
+                  <li class="header-item"><a href="" class="header-link link">Contacts</a></li>
+                </ul>
+                <div class="mobile-menu-address"></div>
+                <ul class="mobile-menu-list">
+                <li>
+                  <a href="mailto:info@devstudio.com" target="_blank" class="mobile-menu-mailto list">info@devstudio.com
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+110001111111" class="mobile-menu-tel list">+11 (000) 111-11-11</a>
+                </li>
+              </ul>
+</div>
     </header>
     <!-- hero -->
     <main>
@@ -380,6 +410,7 @@
       </div>
   </section>
     </main>
+
     <!-- footer -->
     <footer class="footer hide">
         <div class="container footer-box">
@@ -522,14 +553,15 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    
     <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
     ></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
